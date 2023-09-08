@@ -568,7 +568,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h2 class="post-title">Sugestão de traje</h2>
                 </header>
                 <section class="post-content">					
-                    
+                    <style>
+.animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animation.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+<div class="animation fade-in">
+    
+
 <div class="dress-code">
   <h2></h2>
   <div class="image-container">
@@ -604,6 +619,25 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 
 
+</div>
+
+
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const animationElements = document.querySelectorAll('.animation.fade-in');
+
+    ScrollReveal().reveal(animationElements, {
+        duration: 2000,        
+        distance: '20px',      
+        opacity: 0,            
+        origin: 'bottom',      
+        delay: 200,            
+    });
+});
+</script>
+
+
 					
                 </section>
             </article>
@@ -618,7 +652,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h2 class="post-title">Álbum de fotos</h2>
                 </header>
                 <section class="post-content">					
-                    <div>
+                    <style>
+.animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animation.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+<div class="animation fade-in">
+    
+<div>
   
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -748,6 +797,25 @@ background: #F1ECC3
     });
   </script>
 </div>
+
+
+</div>
+
+
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const animationElements = document.querySelectorAll('.animation.fade-in');
+
+    ScrollReveal().reveal(animationElements, {
+        duration: 2000,        
+        distance: '20px',      
+        opacity: 0,            
+        origin: 'bottom',      
+        delay: 200,            
+    });
+});
+</script>
 
 
 					
@@ -1240,7 +1308,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div style="margin-top: 20px;"></div>
  
 <div class="tooltip">
-  <a href="https://open.spotify.com/playlist/5A3HJWPz0wbhLOMogc6Xec" target="_blank">
+  <a href="https://open.spotify.com/playlist/5A3HJWPz0wbhLOMogc6Xec?si=Igfa1IDPRzSipuSedX7sYA&pt=7ab15653d5fd8c7a7e779c8efbf4f47c" target="_blank">
     <button class="button" id="wishlistBtn">Spotify</button>
   </a>
   <span class="tooltiptext right">Quer uma música na festa?</span>
